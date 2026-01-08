@@ -13,7 +13,7 @@ class Books(models.Model):
 
     )
     name = models.CharField(max_length=30)
-    year = models.DateField()
+    year = models.DateField(null=True)
     genres = models.CharField(max_length=2,choices=Book_Genre)
     Age_group= models.CharField(max_length=2,choices=Ages)
     def __str__(self):
